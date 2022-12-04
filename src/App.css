@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container{
+  background-color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container h1{
+  font-family: 'Open Sans', sans-serif;
+  color: aliceblue;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button{
+  background-color: #8b8b8b;
+  color: aliceblue;
+  border: none;
+  border-radius: 200px;
+  width: 120px;
+  height: 40px;
+  transition: .3s;
+  font-size: 1em;
+  margin: 10px 10px 0 10px;
+}
+
+.buttons button:hover{
+  background-color: #707070; 
+  transition: .3s;
+  box-shadow: 4px 4px 0 #1a1a1a;
+  transform: translate(-4px, -4px);
+}
+
+.App{
+  width: 90%;
+  height: 80%;
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin-top: 1%;
+}
+
+input[type=color]{
+  margin-top: 10px;
+  width: 250px;
+}
