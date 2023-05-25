@@ -14,14 +14,14 @@ function App() {
 
   const handleUndo = () => {
     const newClickedPoints = [...clickedPoints];
-    const newLastClickedPoint = [...lastClickedPoint, newClickedPoints.pop()];
+    const newLastClickedPoint = [...lastClickedPoint, newClickedPoints.pop()] as IClickedProps[];
     setClickedPoints(newClickedPoints);
     setLastClickedPoint(newLastClickedPoint);
     
   }
 
   const handleRedo = () => {
-    const lastClick = [...clickedPoints, lastClickedPoint.pop()];
+    const lastClick = [...clickedPoints, lastClickedPoint.pop()] as IClickedProps[];
     setClickedPoints(lastClick);
   }
 
